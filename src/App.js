@@ -10,12 +10,13 @@ import Favorites from "./Favorites";
 
 function App() {
   const [page, setPage] = useState("/characters")
+  const [favorites, setFavorites] = useState("")
 
 
 
-function addFav(newFav){
-// const updatedFavs = [...]
-console.log(newFav)
+function addFav(favoritesObj){
+const updatedFavorites = [...favorites, favoritesObj]
+setFavorites(updatedFavorites)
 
 }
 
