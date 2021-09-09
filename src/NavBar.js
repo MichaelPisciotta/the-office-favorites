@@ -6,13 +6,13 @@ function NavBar() {
     return (
         <nav>
             <NavLink exact to="/characters">Characters</NavLink>
-            <br></br>
-            <br></br>
+           
             <NavLink to="/memes">Memes</NavLink>
-            <br></br>
-            <br></br>
-
+        
             <NavLink to="/favorites">Favorites</NavLink>
+
+            <a className="mail" href="mailto:mfp56@miami.edu">Email Me!</a>  
+
         </nav>
     );
 }

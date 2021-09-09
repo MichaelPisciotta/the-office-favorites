@@ -3,7 +3,7 @@ import React from "react";
 function Memes(){
  return(
         <div>
-            <h1>There</h1>
+            <h1>The Office memes</h1>
         </div>       
         )
 }
