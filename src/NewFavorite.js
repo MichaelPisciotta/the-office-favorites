@@ -1,7 +1,7 @@
 import React, {useState} from "react";
+import FavoriteItem from "./FavoriteItem";
 
-
-function NewFavorite({ addFav }) {
+function NewFavorite({ addFav, favorites }) {
     const [description, setDescription] = useState("");
     const [image, setImage] = useState("");
 
@@ -26,10 +26,10 @@ function NewFavorite({ addFav }) {
     };
   
     return (
+
         <div>
 
         <form onSubmit={handleSubmit}>
-            
             <h2>Add favorites</h2>
 
             <label htmlFor="description">Description:</label>
@@ -39,10 +39,12 @@ function NewFavorite({ addFav }) {
             <input type="text" value={image} onChange={(e) => setImage(e.target.value)} />  
 
             <button type="submit">Add New Favorite</button>
-
         </form>
 
+        <FavoriteItem  />
+
         </div>
+
     
     )
 }
