@@ -16,7 +16,7 @@ function Characters({page, setPage}){
 
 
     useEffect(() => {
-        fetch("/db.json")
+        fetch("/localhost:3000/characters")
           .then((r) => r.json())
           .then(data => setPage(data));
     }, [])

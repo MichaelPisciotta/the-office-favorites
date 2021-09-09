@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 
-function Favorites({ addFav }) {
+function NewFavorite({ addFav }) {
     const [description, setDescription] = useState("");
     const [image, setImage] = useState("");
 
@@ -14,7 +14,7 @@ function Favorites({ addFav }) {
                 image: image
             }
         }
-        fetch("/db.json/favorites", {
+        fetch("http://localhost:3000/favorites", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -51,4 +51,4 @@ function Favorites({ addFav }) {
 
 
 
-export default Favorites;
+export default NewFavorite;

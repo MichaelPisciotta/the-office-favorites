@@ -9,7 +9,7 @@ function NavBar() {
            
             <NavLink to="/memes">Memes</NavLink>
         
-            <NavLink to="/favorites">Favorites</NavLink>
+            <NavLink to="/favorites/new">Favorites</NavLink>
 
             <a className="mail" href="mailto:mfp56@miami.edu">Email Me!</a>  
 

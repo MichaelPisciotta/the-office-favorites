@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import NavBar from "./NavBar";
 import Characters from "./Characters";
 import Memes from "./Memes";
-import Favorites from "./Favorites";
+import NewFavorite from "./NewFavorite";
 
 
 
@@ -14,11 +14,11 @@ function App() {
 
 
 
-function addFav(favoritesObj){
-const updatedFavorites = [...favorites, favoritesObj]
-setFavorites(updatedFavorites)
+  function addFav(favoritesObj){
+    const updatedFavorites = [...favorites, favoritesObj]
+    setFavorites(updatedFavorites)
 
-}
+  }
 
 
   return (
@@ -32,8 +32,8 @@ setFavorites(updatedFavorites)
                 <Route path="/memes">
                     <Memes page={page} setPage={setPage}/>
                 </Route>
-                <Route path="/favorites">
-                    <Favorites addFav={addFav} />
+                <Route path="/favorites/new">
+                    <NewFavorite addFav={addFav} />
                 </Route>
                 <Route path="*">
                     <h1>404 not found</h1>

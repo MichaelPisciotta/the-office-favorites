@@ -1,0 +1,57 @@
+{
+  "characters": [
+    {
+      "id": "1",
+      "firstName": "Michael",
+      "lastName": "Scott"
+    },
+    {
+      "id": "2",
+      "firstName": "Jim",
+      "lastName": "Halpert"
+    },
+    {
+      "id": "3",
+      "firstName": "Dwight",
+      "lastName": "Schrute"
+    },
+    {
+      "id": "4",
+      "firstName": "Pam",
+      "lastName": "Beesly"
+    },
+    {
+      "id": "5",
+      "firstName": "Ryan",
+      "lastName": "Howard"
+    },
+    {
+      "id": "6",
+      "firstName": "Kelly",
+      "lastName": "Kapoor"
+    },
+    {
+      "id": "7",
+      "firstName": "Kevin",
+      "lastName": "Malone"
+    },
+    {
+      "id": "8",
+      "firstName": "Oscar",
+      "lastName": "Martinez"
+    },
+    {
+      "id": "9",
+      "firstName": "Andy",
+      "lastName": "Bernard"
+    },
+    {
+      "id": "10",
+      "firstName": "Creed",
+      "lastName": "Bratton"
+    }
+  ],
+  "favorites": [
+   
+  ]
+}
