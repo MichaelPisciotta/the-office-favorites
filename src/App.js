@@ -17,13 +17,13 @@ function App() {
       <NavBar onChangePage={setPage} />
             <Switch>
             <Route exact path="/characters">
-                    <Characters />
+                    <Characters  page={page} setPage={setPage}/>
+                </Route>
+                <Route path="/memes">
+                    <Memes page={page} setPage={setPage}/>
                 </Route>
                 <Route path="/favorites">
                     <Favorites />
-                </Route>
-                <Route path="/memes">
-                    <Memes />
                 </Route>
                 <Route path="*">
                     <h1>404 not found</h1>

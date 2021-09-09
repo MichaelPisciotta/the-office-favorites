@@ -32,51 +32,21 @@
       },
       {
         "_id": "7",
-        "firstName": "Angela",
-        "lastName": "Martin"
-      },
-      {
-        "_id": "8",
         "firstName": "Kevin",
         "lastName": "Malone"
       },
       {
-        "_id": "9",
+        "_id": "8",
         "firstName": "Oscar",
         "lastName": "Martinez"
       },
       {
-        "_id": "10",
+        "_id": "9",
         "firstName": "Andy",
         "lastName": "Bernard"
       },
       {
-        "_id": "11",
-        "firstName": "Stanley",
-        "lastName": "Hudson"
-      },
-      {
-        "_id": "12",
-        "firstName": "Phyllis",
-        "lastName": "Lapin"
-      },
-      {
-        "_id": "13",
-        "firstName": "Toby",
-        "lastName": "Flenderson"
-      },
-      {
-        "_id": "14",
-        "firstName": "Erin",
-        "lastName": "Hannon"
-      },
-      {
-        "_id": "15",
-        "firstName": "Darryl",
-        "lastName": "Philbin"
-      },
-      {
-        "_id": "16",
+        "_id": "10",
         "firstName": "Creed",
         "lastName": "Bratton"
       }

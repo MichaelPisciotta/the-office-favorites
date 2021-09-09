@@ -1,24 +1,27 @@
-import React from "react";
+import React, {useEffect} from "react";
 import michael from './images/michael.jpeg';
-import jim from './images/.jpeg';
-import dwight from './images/.jpeg';
-import pam from './images/.jpeg';
-import ryan from './images/.jpeg';
-import kelly from './images/.jpeg';
-import angela from './images/.jpeg';
-import kevin from './images/.jpeg';
-import oscar from './images/.jpeg';
-import andy from './images/.jpeg';
-import stanley from './images/.jpeg';
-import phyllis from './images/.jpeg';
-import toby from './images/.jpeg';
-import erin from './images/.jpeg';
-import darryl from './images/.jpeg';
-import creed from './images/.jpeg';
+import jim from './images/jim.jpeg';
+import dwight from './images/dwight.jpeg';
+import pam from './images/pam.jpeg';
+import ryan from './images/ryan.jpeg';
+import kelly from './images/kelly.jpeg';
+import kevin from './images/kevin.jpeg';
+import oscar from './images/oscar.jpeg';
+import andy from './images/andy.jpeg';
+import creed from './images/creed.jpeg';
 
 
 
-function Characters(){
+function Characters({page, setPage}){
+
+
+    useEffect(() => {
+        fetch("/db.json")
+          .then((r) => r.json())
+          .then(data => setPage(data));
+    }, [])
+
+
     return(
         <div>
 
@@ -56,11 +59,6 @@ function Characters(){
             </div>
 
             <div>
-            <img src={angela} />
-            <h2>Angela Martin</h2>
-            </div>
-
-            <div>
             <img src={kevin} />
             <h2>Kevin Malone</h2>
             </div>
@@ -73,31 +71,6 @@ function Characters(){
             <div>
             <img src={andy} />
             <h2>Andy Bernard</h2>
-            </div>
-
-            <div>
-            <img src={stanley} />
-            <h2>Stanley Hudson</h2>
-            </div>
-
-            <div>
-            <img src={phyllis} />
-            <h2>Phyllis Lapin</h2>
-            </div>
-
-            <div>
-            <img src={toby} />
-            <h2>Toby Flenderson</h2>
-            </div>
-
-            <div>
-            <img src={erin} />
-            <h2>Erin Hannon</h2>
-            </div>
-
-            <div>
-            <img src={darryl} />
-            <h2>Darryl Philbin</h2>
             </div>
 
             <div>
