@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import michael from './memes/michael.jpeg';
 import jim from './memes/jim.jpeg';
 import dwight from './memes/dwight.jpeg';

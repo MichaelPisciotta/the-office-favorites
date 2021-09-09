@@ -11,6 +11,15 @@ import Favorites from "./Favorites";
 function App() {
   const [page, setPage] = useState("/characters")
 
+
+
+function addFav(newFav){
+// const updatedFavs = [...]
+console.log(newFav)
+
+}
+
+
   return (
     <div className="App">
       <Router>
@@ -23,7 +32,7 @@ function App() {
                     <Memes page={page} setPage={setPage}/>
                 </Route>
                 <Route path="/favorites">
-                    <Favorites />
+                    <Favorites addFav={addFav} />
                 </Route>
                 <Route path="*">
                     <h1>404 not found</h1>
