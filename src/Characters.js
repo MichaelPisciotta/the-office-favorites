@@ -23,10 +23,10 @@ function Characters({page, setPage}){
 
 
     return(
-        <div>
+        <div className="center-images">
 
 
-            <h1>The Office characters</h1>
+            <h1 className="title">The Office characters</h1>
             
             <div>
             <img src={michael} />
